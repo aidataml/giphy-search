@@ -21,7 +21,7 @@ function showImages(responseData) {
 
 $("form").on("submit", async function(search) {
   search.preventDefault();
-  const response = await axios.get("http://api.giphy.com/v1/gifs/search", {
+  const response = await axios.get("https://api.giphy.com/v1/gifs/search", {
     params: {
       q: $searchCriteria.val(),
       api_key: "KMPuqCxz7m8XvJL0PuQs0QJyCX7PZ6JW"
